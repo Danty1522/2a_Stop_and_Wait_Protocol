@@ -13,7 +13,7 @@ To write a python program to perform stop and wait protocol
 ```
 import socket 
 s=socket.socket() 
-s.connect(('localhost',7000)) 
+s.connect(('localhost',8000)) 
 while True: 
     print(s.recv(1024).decode()) 
     s.send("Acknowledgement Recived".encode())
@@ -24,7 +24,7 @@ while True:
 
 import socket 
 s=socket.socket()
-s.bind(('localhost',7000))
+s.bind(('localhost',8000))
 s.listen(5) 
 c,addr=s.accept() 
 while True: 
@@ -39,7 +39,8 @@ while True:
         break
 ```
 ## OUTPUT
-<img width="1919" height="1140" alt="Screenshot 2025-10-13 141640" src="https://github.com/user-attachments/assets/adda28e3-0c97-4a3a-807b-e330a8778234" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0c1238d3-1ea1-4c76-965a-48d4409c8a7e" />
+
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed.
